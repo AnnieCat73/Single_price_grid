@@ -1,0 +1,165 @@
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(218, 43%, 93%);
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  line-height: 1.8;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  max-width: 375px;
+  margin: 5rem auto;
+}
+
+/* Top Section */
+
+#top-section {
+  background-color: #fdfcfc;
+  padding: 4rem 3rem;
+  height: 33rem;
+  box-shadow: 0px 1px 1px 1px #e9e8e8;
+}
+
+#top-section h1 {
+  color: hsl(179, 62%, 43%);
+  padding-bottom: 3rem;
+  font-weight: bold;
+}
+
+#top-section h2 {
+  color: hsl(71, 73%, 54%);
+  padding-bottom: 3rem;
+}
+#top-section p {
+  color: hsl(210, 3%, 61%);
+}
+
+/* Middle Section */
+
+#middle-section {
+  background-color: hsl(179, 62%, 43%);
+  padding: 4rem 3rem;
+  height: 33rem;
+  box-shadow: 0px 1px 1px 1px #e9e8e8;
+}
+
+#middle-section h2 {
+  color: hsl(218, 43%, 93%);
+  padding-bottom: 3rem;
+}
+
+#middle-section p {
+  color: hsl(218, 43%, 93%);
+}
+
+#middle-section p span {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+#middle-section .padding {
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+}
+
+#middle-section .btn a {
+  text-decoration: none;
+  color: hsl(218, 43%, 93%);
+  font-size: 1.8rem;
+  text-shadow: 0px 1px 1px 1px #e9e8e8;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 4px;
+  padding: 1.8rem 0;
+  display: inline-block;
+  box-shadow: 0px 4px 8px #66939b;
+  opacity: 0.6s;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 1; /* SEE IF THIS WORKS IN DESKTOP*/
+}
+
+/* Bottom Section */
+
+#bottom-section {
+  background-color: hsl(170, 49%, 58%);
+  padding: 4rem 3rem;
+  height: 33rem;
+  box-shadow: 0px 1px 1px 1px #e9e8e8;
+}
+
+#bottom-section h2 {
+  color: hsl(218, 43%, 93%);
+}
+
+#bottom-section ul {
+  padding-top: 2rem;
+}
+
+#bottom-section ul li {
+  color: hsl(218, 43%, 93%);
+  padding-bottom: 1rem;
+}
+
+#bottom-section .attribution {
+  margin-top: 1.5rem;
+}
+
+#bottom-section .attribution a {
+  text-decoration: none;
+  color: hsl(218, 43%, 93%);
+  font-style: italic;
+}
+
+.attribution {
+  color: hsl(218, 43%, 93%);
+  font-size: 1.3rem;
+  text-align: left;
+}
