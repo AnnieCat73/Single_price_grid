@@ -102,28 +102,22 @@ img {
   padding-top: 1rem;
 }
 
-#middle-section .btn a {
+#middle-section button a {
   text-decoration: none;
   color: hsl(218, 43%, 93%);
   font-size: 1.8rem;
   text-shadow: 0px 1px 1px 1px #e9e8e8;
 }
 
-.btn {
+button {
   outline: none;
   border: none;
   width: 100%;
   background-color: hsl(71, 73%, 54%);
   border-radius: 4px;
   padding: 1.8rem 0;
-  display: inline-block;
+  display: block;
   box-shadow: 0px 4px 8px #66939b;
-  opacity: 0.6s;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  opacity: 1; /* SEE IF THIS WORKS IN DESKTOP*/
 }
 
 /* Bottom Section */
@@ -162,4 +156,86 @@ img {
   color: hsl(218, 43%, 93%);
   font-size: 1.3rem;
   text-align: left;
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1000px;
+    margin: 15rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 33rem 33rem;
+  }
+
+  #top-section {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    padding: 4rem 10rem;
+  }
+
+  #top-section h1 {
+    font-size: 3rem;
+  }
+
+  #top-section h2 {
+    font-size: 2.6rem;
+  }
+
+  #top-section p {
+    font-size: 2.3rem;
+  }
+
+  #middle-section {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 4rem 10rem;
+    box-shadow: 0px 0px 1px 1px #e9e8e8;
+  }
+
+  #middle-section h2 {
+    font-size: 2.2rem;
+  }
+
+  #middle-section p {
+    font-size: 1.8rem;
+  }
+
+  #middle-section p span {
+    font-size: 3.2rem;
+  }
+
+  #middle-section button {
+    transition: all 1s ease;
+  }
+
+  #middle-section button:hover {
+    background-color: rgb(50, 129, 50);
+    cursor: pointer;
+  }
+
+  #bottom-section {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+    padding: 4rem 10rem;
+    box-shadow: 0px 1px 1px 0px #e9e8e8;
+  }
+
+  #bottom-section h2 {
+    font-size: 2.2rem;
+  }
+
+  #bottom-section ul {
+    padding-top: 1.5rem;
+  }
+
+  #bottom-section ul li {
+    font-size: 1.7rem;
+  }
+
+  #bottom-section .attribution {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+  }
 }
